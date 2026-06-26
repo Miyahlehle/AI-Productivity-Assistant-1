@@ -37,7 +37,7 @@ function EmailPage() {
       const res = await fn({ data: { purpose, audience, tone, keyPoints } });
       setOutput(res.text);
     } catch (err) {
-      setError(err instanceof Error ? err.message : "Failed to generate email");
+      setError("Something went wrong. Please try again.");
     } finally {
       setLoading(false);
     }
