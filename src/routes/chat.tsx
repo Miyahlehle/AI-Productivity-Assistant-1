@@ -157,7 +157,7 @@ function ChatPage() {
 
           {error && (
             <div className="rounded-lg border border-destructive/40 bg-destructive/5 p-3 text-sm text-destructive">
-              {error.message || "Something went wrong."}
+              Something went wrong. Please try again.
             </div>
           )}
         </div>
