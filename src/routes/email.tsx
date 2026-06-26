@@ -37,6 +37,7 @@ function EmailPage() {
       const res = await fn({ data: { purpose, audience, tone, keyPoints } });
       setOutput(res.text);
     } catch (err) {
+      console.error(err);
       setError("Something went wrong. Please try again.");
     } finally {
       setLoading(false);
