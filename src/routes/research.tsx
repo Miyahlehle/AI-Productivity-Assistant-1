@@ -10,7 +10,7 @@ import { Label } from "@/components/ui/label";
 import { researchTopic } from "@/lib/ai-tools.functions";
 
 export const Route = createFileRoute("/research")({
-  head: () => ({ meta: [{ title: "Research Assistant — Workmate AI" }] }),
+  head: () => ({ meta: [{ title: "Research Assistant — AI Workplace Productivity Assistant" }] }),
   component: ResearchPage,
 });
 

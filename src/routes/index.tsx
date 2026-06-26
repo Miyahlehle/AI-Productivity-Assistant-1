@@ -5,7 +5,7 @@ import { AppShell } from "@/components/AppShell";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Workmate AI — Workplace Productivity Assistant" },
+      { title: "AI Workplace Productivity Assistant" },
       { name: "description", content: "AI-powered tools to draft emails, summarize meetings, plan tasks, research topics, and answer workplace questions." },
     ],
   }),

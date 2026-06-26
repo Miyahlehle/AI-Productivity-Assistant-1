@@ -11,7 +11,7 @@ import { Label } from "@/components/ui/label";
 import { planTasks } from "@/lib/ai-tools.functions";
 
 export const Route = createFileRoute("/planner")({
-  head: () => ({ meta: [{ title: "Task Planner — Workmate AI" }] }),
+  head: () => ({ meta: [{ title: "Task Planner — AI Workplace Productivity Assistant" }] }),
   component: PlannerPage,
 });
 
