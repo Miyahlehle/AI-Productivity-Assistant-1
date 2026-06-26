@@ -34,7 +34,8 @@ function ResearchPage() {
       const res = await fn({ data: { topic } });
       setOutput(res.text);
     } catch (err) {
-      setError(err instanceof Error ? err.message : "Failed");
+      console.error(err);
+      setError("Something went wrong. Please try again.");
     } finally { setLoading(false); }
   };
 

@@ -4,13 +4,18 @@ import { z } from "zod";
 import { getProvider, DEFAULT_MODEL } from "./ai-gateway.server";
 
 async function runPrompt(system: string, prompt: string) {
-  const provider = getProvider();
-  const { text } = await generateText({
-    model: provider(DEFAULT_MODEL),
-    system,
-    prompt,
-  });
-  return { text };
+  try {
+    const provider = getProvider();
+    const { text } = await generateText({
+      model: provider(DEFAULT_MODEL),
+      system,
+      prompt,
+    });
+    return { text };
+  } catch (error) {
+    console.error("[ai-tools] generation failed", error);
+    throw new Error("The assistant is temporarily unavailable. Please try again.");
+  }
 }
 
 // --- Email Generator ---
