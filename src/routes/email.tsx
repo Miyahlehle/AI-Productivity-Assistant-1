@@ -12,7 +12,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { generateEmail } from "@/lib/ai-tools.functions";
 
 export const Route = createFileRoute("/email")({
-  head: () => ({ meta: [{ title: "Email Generator — Workmate AI" }] }),
+  head: () => ({ meta: [{ title: "Email Generator — AI Workplace Productivity Assistant" }] }),
   component: EmailPage,
 });
 

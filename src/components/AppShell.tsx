@@ -24,7 +24,7 @@ export function AppShell({ children }: { children: ReactNode }) {
             <Sparkles className="h-5 w-5" />
           </div>
           <div className="flex flex-col leading-tight">
-            <span className="font-display font-semibold text-sidebar-foreground">Workmate AI</span>
+            <span className="font-display font-semibold text-sidebar-foreground">AI Workplace Productivity Assistant</span>
             <span className="text-[11px] text-muted-foreground">Productivity Assistant</span>
           </div>
         </div>
@@ -63,7 +63,7 @@ export function AppShell({ children }: { children: ReactNode }) {
           <div className="grid h-8 w-8 place-items-center rounded-lg bg-primary text-primary-foreground">
             <Sparkles className="h-4 w-4" />
           </div>
-          <span className="font-display font-semibold">Workmate AI</span>
+          <span className="font-display font-semibold">AI Workplace Productivity Assistant</span>
         </div>
         <div className="flex overflow-x-auto gap-1 px-2 pb-2 scrollbar-none">
           {nav.map((item) => {

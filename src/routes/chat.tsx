@@ -10,7 +10,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { cn } from "@/lib/utils";
 
 export const Route = createFileRoute("/chat")({
-  head: () => ({ meta: [{ title: "AI Chatbot — Workmate AI" }] }),
+  head: () => ({ meta: [{ title: "AI Chatbot — AI Workplace Productivity Assistant" }] }),
   component: ChatPage,
 });
 
@@ -170,7 +170,7 @@ function ChatPage() {
               value={input}
               onChange={(e) => setInput(e.target.value)}
               onKeyDown={onKey}
-              placeholder="Message Workmate AI..."
+              placeholder="Message AI Workplace Productivity Assistant..."
               rows={2}
               className="border-0 resize-none focus-visible:ring-0 shadow-none bg-transparent"
             />

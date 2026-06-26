@@ -10,7 +10,7 @@ import { Label } from "@/components/ui/label";
 import { summarizeMeeting } from "@/lib/ai-tools.functions";
 
 export const Route = createFileRoute("/meetings")({
-  head: () => ({ meta: [{ title: "Meeting Summarizer — Workmate AI" }] }),
+  head: () => ({ meta: [{ title: "Meeting Summarizer — AI Workplace Productivity Assistant" }] }),
   component: MeetingPage,
 });
 
